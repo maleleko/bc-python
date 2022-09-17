@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: lightgray;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            padding-bottom: 20px;
+        }
+        
+        p {
+            text-align: center;
+        }
+
+        .box {
+            margin: 0% auto;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(101, 165, 205);
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .hidden {
+            color: rgb(101, 165, 205)
+        }
+
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    {% for box in range(0,3): %}
+    <div class="box"><p class="hidden">hidden<br> in <br>box ;)</p></div>
+    {% endfor %}
+</body>
+</html>
