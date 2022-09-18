@@ -15,8 +15,7 @@
         h1 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            margin-top: 100px;
-            /* padding-bottom: 20px; */
+            margin-top: 50px;
         }
         
         p {
@@ -31,7 +30,7 @@
         }
 
         .box {
-            margin-top: 17.5%;
+            margin-top: 12%;
             height: 150px;
             width: 150px;
             border: 1px solid black;
@@ -44,10 +43,11 @@
     <title>Playground</title>
 </head>
 <body>
+    <h1>Is this the color you wanted?</h1>
     <div class="wrap">
-        {% for box in range(0,3): %}
-        <div class="box" style="background-color: rgb(101, 165, 205);"></div>
-        {% endfor %}
+    {% for box in range(0,x): %}
+    <div class="box" style="background-color: {{color}};"></div>
+    {% endfor %}
     </div>
 </body>
 </html>
