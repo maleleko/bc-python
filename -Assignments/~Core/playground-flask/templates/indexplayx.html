@@ -16,7 +16,7 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
             margin-top: 100px;
-            /* padding-bottom: 20px; */
+            padding-bottom: 20px;
         }
         
         p {
@@ -45,9 +45,9 @@
 </head>
 <body>
     <div class="wrap">
-        {% for box in range(0,3): %}
-        <div class="box" style="background-color: rgb(101, 165, 205);"></div>
-        {% endfor %}
+    {% for box in range(0,x): %}
+    <div class="box" style="background-color: rgb(101, 165, 205);"></div>
+    {% endfor %}
     </div>
 </body>
 </html>
