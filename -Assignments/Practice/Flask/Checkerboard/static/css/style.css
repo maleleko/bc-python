@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+}
+
+/* .col {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+} */
+
+.box {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+    display: flex;
+}
+
+/* .box2 {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+} */

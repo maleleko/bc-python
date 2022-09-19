@@ -1,4 +1,3 @@
-from contextlib import redirect_stderr
 from flask import Flask, render_template
 
 app = Flask(__name__)
