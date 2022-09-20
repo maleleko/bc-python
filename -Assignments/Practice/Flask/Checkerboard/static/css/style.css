@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -11,33 +11,15 @@ h1 {
 
 .wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 .bigbox {
+    border-collapse: collapse;
     display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
 }
-
-/* .col {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-} */
 
 .box {
     border: 1px solid black;
     height: 35px;
     width: 35px;
-    display: flex;
 }
-
-/* .box2 {
-    border: 1px solid black;
-    height: 35px;
-    width: 35px;
-} */

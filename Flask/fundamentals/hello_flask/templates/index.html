@@ -11,11 +11,13 @@
     <h3>My Flask Template</h3>
     <p>Phrase: {{ phrase }}</p>
     <p>Times: {{ times }}</p>
-    {% for x in range(0,times): %}
+    {% for x in range(times) %}
         <p>{{ phrase }}</p>
     {% endfor %}
     {% if phrase == "hello" %}
         <p>The phrase says hello</p>
     {% endif %}
+    <p> </p>
+    <p> -------------------------</p>
 </body>
 </html>

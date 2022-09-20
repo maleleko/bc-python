@@ -10,9 +10,25 @@
 <body>
     <h1>Checkerboard</h1>
     <div class="wrap">
-        <div class="bigbox">
+        <table class="bigbox"> 
             {% for row in range(0,num) %}
-                {%for column in range(0,num)%}
+                <td>
+                    {%for column in range(0,num2)%}
+                        {%if (row+column) % 2 == 0 %}
+                            <div class="box" style="background-color: {{color1}};"></div>
+                        {%else %}
+                            <div class="box" style="background-color: {{color2}};"></div>
+                        {%endif%}
+                    {%endfor%}
+                </td>
+            {%endfor%}
+        </table>
+    </div>
+</body>
+</html>
+            {# {% for row in range(num) %}
+            <td>
+                {%for column in range(num)%}
                     {%if (row+column) % 2 == 0 %}
                         <div class="box" style="background-color: {{color1}};"></div>
                     {%else %}
@@ -20,7 +36,4 @@
                     {%endif%}
                 {%endfor%}
             {%endfor%}
-        </div>
-    </div>
-</body>
-</html>
+            </td> #}
