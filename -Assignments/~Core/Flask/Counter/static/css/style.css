@@ -1,0 +1,25 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.wrapper {
+    margin-top: 75px;
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.second-button {
+    margin-top: 30px;
+}
+
+/* .specify {
+    margin-top: 50px;
+} */

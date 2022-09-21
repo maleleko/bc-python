@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    width: 550px;
+    height: 685px;
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: rgb(60, 57, 68);
+    border-radius: 3%;
+}
+
+.content {
+    padding: 50px;
+}
+
+.named, .hobby, .favorites, .comments, .butn {
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+h1 {
+    color: rgb(186, 183, 214);
+}
+
+.wrap {
+    margin: 0 auto;
+    display: flex;
+    width: 550px;
+    height: 325px;
+    border: 1px solid black;
+    margin-top: 50px;
+    background-color: rgb(60, 57, 68);
+    border-radius: 3%;
+}
+
+.butn2 {
+    margin-top: 50px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Results</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class='content'>
+            <div>
+                {% for form in session['forms'] %}
+                    <h1>{{form['names']}}</h1>
+                {% endfor %}
+            </div>
+            <div class="hobby">
+                {% for form in session['forms'] %}
+                    Hobby: {{form['hobbies']}}
+                {% endfor %}
+            </div>
+            <div class="favorites">
+                {% for form in session['forms'] %}
+                    Favorite Food: {{form['favorite']}}
+            {% endfor %}
+            </div>
+            <div class="comments">
+                {% for form in session['forms'] %}
+                    Comment: {{form['comment']}}
+                {%endfor%}
+            </div>
+            <div class=butn2>
+            <form action="/destroy_sesh">
+                    <input class="btn btn-outline-light btn-sm" type="submit" value="Home">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

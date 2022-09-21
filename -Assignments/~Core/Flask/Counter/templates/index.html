@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <h1>Counter</h1>
+            <p>You've visited this site {{session['count']}} time(s) in total.</p>
+            <div class="buttons">
+                <form action='/'>
+                    <input class="btn btn-outline-success" type="submit" value="Count">
+                </form>
+                <form action="/destroy_sesh">
+                    <input class="btn btn-outline-danger" type="submit" value="Reset">
+                </form>
+            </div>
+            <div class="second-button">
+                <form action="/two">
+                    <input class="btn btn-outline-dark" type="submit" value="Count +2">
+                </form>
+            </div>
+            <!-- <div class="specify">
+                <form action="/specify">
+                    <label for="">Increase by?</label>
+                    <input type="number">
+                </form>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

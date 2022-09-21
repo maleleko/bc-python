@@ -31,4 +31,4 @@ def show_user():
     return render_template("show.html", name_on_template=session['username'], email_on_template=session['useremail']) #modified from session reading on platform
 
 if __name__=="__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=8001)
