@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 650px;
+    height: 600px;
+}
+
+.wrapped {
+    margin: 0 auto;
+    width: 650px;
+    height: 600px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.navtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.form {
+    padding-top: 20px;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+.top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

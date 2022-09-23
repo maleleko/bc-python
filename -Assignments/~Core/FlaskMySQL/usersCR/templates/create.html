@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users CR</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapped">
+        <div class="top">
+            <h1>Created Users</h1>
+        </div>
+        <div class="content">
+            <table class="table table-bordered">
+                <thead>
+                <tr class="table-primary">
+                    <th scope="col">ID</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Created At</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for one_user in all_users %}
+                <tr class="table-secondary">
+                    <td>{{one_user['id']}}</td>
+                    <td>{{one_user['first_name']}}</td>
+                    <td>{{one_user['last_name']}}</td>
+                    <td>{{one_user['email']}}</td>
+                    <td>{{one_user['created_at']}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <form action="/">
+            <input class="btn btn-outline-dark btn-sm" type="submit" value="Add A New User">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

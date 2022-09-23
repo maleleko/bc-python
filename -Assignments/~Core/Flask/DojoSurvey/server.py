@@ -12,10 +12,10 @@ def index():
 
 @app.route('/process', methods=['POST'])
 def processform():
-    if 'forms' in session:
-        forms = session['forms']
-    else:
-        session['forms'] = [request.form]
+    # if 'forms' in session:
+    #     forms = session['forms']
+    # else:
+    session['forms'] = [request.form]
     return redirect('/results')
 
 @app.route('/results')
