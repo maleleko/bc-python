@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* index html */
+.wrapper {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-col {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dojoform {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alldojos {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(60, 57, 68);
+}
+
+.a {
+    color: whitesmoke;
+}
+
+.bottomnav {
+    margin-top: 20px;
+    color: black;
+}
+
+/* dojo html */
+.wrapperr {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablez {
+    margin-top: 35px;
+}
+
+/* ninja html */
+.content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ninjaform {
+    height: 520px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: rgb(60, 57, 68);
+}
+
+.form-group {
+    margin-top: 20px;
+    color: whitesmoke;
+}
