@@ -1,0 +1,8 @@
+# One of the most important things about database design is to organize your data to minimize repetition. Your database is the backbone of your application, and it is very important to understand how to properly organize it to maximize efficiency and minimize data queries. In this chapter, we will explore how to create  relational database models and explore the different ways in which you can relate data using them.
+
+# Why ERD first?
+
+# ERD is the abbreviation for 'Entity Relationship Diagram'. That is just a fancy way of saying that ERDs are essentially  visual planes  of how your database looks and behaves. ERD and SQL work together very intimately. An ERD is a map of the structure of how we want to store our data, and SQL is the language we use to manipulate the data according to the relationships we define in our ERD. Learning the design of the database first will help us visualize what our relational databases look like, which makes it much easier to choose the actual SQL syntax. 
+
+# Why ERD at all?
+# ERD is a process of designing your tables and establishing relationships between them, making your data relational. Almost all imaginable data can be stored in a relational way, there really isn't anything you can't do using a relational database like MySQL. Later, you will learn non-relational databases where everything is stored in a single table. There are advantages and disadvantages for both, but we find that it is much easier to move from a relational database to a non-relational database.
