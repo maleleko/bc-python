@@ -1,0 +1,23 @@
+
+
+/* index css */
+.reg-text {
+    color: gold;
+}
+
+.login-text {
+    color: rgb(59, 177, 118);
+}
+
+.error-msg {
+    color: red;
+}
+
+/* dashboard css */
+.lol {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
